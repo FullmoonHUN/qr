@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Kódok</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+
+</head>
+<body>
+    <div id="header">
+        <img src="momentin.png" alt="Momentin Logo" id="logo"> <!-- Ha van logója -->
+        <h1>momentin IKEA QR kódok</h1>
+    </div>
+    
+    <div id="mainPage">
+        <h1>Válassz egy gombot:</h1>
+        <div id="buttonsContainer"></div>
+    </div>
+    <div id="qrPage" class="hidden">
+        <button id="backButton" onclick="goBack()">Vissza</button>
+        <h2>QR Kódok: <span id="currentPickId"></span></h2>
+        <div id="qrContainer"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1/qrcode.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
